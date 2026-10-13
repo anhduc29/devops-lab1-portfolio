@@ -10,8 +10,6 @@ jobs:
       - name: Audit web performance
         uses: treosh/lighthouse-ci-action@v12
         with:
-          urls: |
-            http://localhost:8080/index.html
+          staticDistDir: ./
           uploadArtifacts: true
           temporaryPublicStorage: true
-          staticDistDir: ./
