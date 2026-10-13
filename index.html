@@ -15,6 +15,17 @@
             align-items: center;
             color: #333;
         }
+        .nav { margin-bottom: 24px; }
+.nav a { 
+    margin: 0 8px; 
+    text-decoration: none; 
+    color: #667eea; 
+    font-weight: bold; 
+    padding: 6px 12px; 
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.nav a:hover { background: #f8f9fa; }
         .container {
             background: white;
             border-radius: 16px;
@@ -38,12 +49,30 @@
         }
         .footer { margin-top: 24px; font-size: 13px; color: #999; }
         .status { color: #38a169; font-weight: bold; }
+    .avatar { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 16px; 
+    border: 4px solid #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
     <div class="container">
+
+    <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+   
         <h1> Xin chào, DevOps!</h1>
         <h2>Lab 1 — Website đã được cập nhật tự động!</h2>
+
+        <div class="nav">
+    <a href="index.html">Trang chủ</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="contact.html">Liên hệ</a>
+</div>
 
         <div class="info">
             <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
@@ -60,7 +89,7 @@
             <span class="badge">CI/CD</span>
             <span class="badge">DevOps</span>
         </div>
-
+        
         <div class="footer">
             <p>Deployed automatically via GitHub Actions Pipeline</p>
             <p> Push code → CI Build → Auto Deploy → Live! </p>
